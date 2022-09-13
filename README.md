@@ -2,12 +2,12 @@
 Aesthetic Startpage to boost your productivity and at the same time give your desktop a new aesthetic look.
 
 <h3>Installation<h3/>
-1. Download/Clone this repository.
-2. Open folder of theme you want to use.
-3. Open index.html file using a web browser.
-4. Copy the url path from the url bar.
-5. Go to web browser's homepage settings.
-6. Select Custom url homepage and paste the url.
+1. Download/Clone this repository.<br>
+2. Open folder of theme you want to use.<br>
+3. Open index.html file using a web browser.<br>
+4. Copy the url path from the url bar.<br>
+5. Go to web browser's homepage settings.<br>
+6. Select Custom url homepage and paste the url.<br>
 
 <h3>Themes:<h3/>
  <h2>Green<h2/>
