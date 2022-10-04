@@ -28,7 +28,7 @@ body {
   width: 300px;
   padding-left: 20px;
   margin-top: -20px;
-  margin-left: 60px;
+  margin-left: 30px;
   color: aliceblue;
   font-size: 20px;
   font-weight: 100;
@@ -80,7 +80,7 @@ form {
   font-size: 2em;
   margin-bottom: 0px;
   padding-top: 0px;
-  margin-left: -440px;
+  margin-left: -450px;
 
   border: none;
   color: rgba(214, 44, 252, 0.992);
