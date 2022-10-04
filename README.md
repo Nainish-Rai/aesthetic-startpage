@@ -29,9 +29,11 @@ Here is a [Live Preview](https://iridescent-starburst-f83bcd.netlify.app/)
 ### Cherry
 ![Screenshot from 2022-10-04 23-00-04](https://user-images.githubusercontent.com/109546113/193887547-87a580f8-b32d-478e-a96c-967eca69afbc.png)
 
-
 ### Purple
 ![Screenshot from 2022-10-04 23-00-35](https://user-images.githubusercontent.com/109546113/193887582-95498fcf-ca59-49bc-a128-960b7439ee8b.png)
 
+### White
+![Screenshot from 2022-10-05 05-00-35](https://user-images.githubusercontent.com/37242269/193944534-78d8d41d-1d90-40aa-b829-b2c824a86d90.PNG)
 
-### Feel free to make new colour themes and improvements <3
+## Feel free to make new colour themes and improvements <3
+
