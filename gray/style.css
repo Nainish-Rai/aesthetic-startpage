@@ -45,7 +45,7 @@ body {
 }
 
 h3 {
-  color: rgb(177, 177, 177);
+  color: rgb(216, 202, 190);
   /* margin: 3px; */
   font-weight: 300;
   padding-left: 40px;
@@ -57,7 +57,7 @@ h3 {
   font-weight: 900;
 } */
 a:hover {
-  color: rgb(177, 177, 177);
+  color: rgb(216, 202, 190);
   transform: scale(2);
   margin-bottom: 2px;
   font-weight: 500;
@@ -83,7 +83,7 @@ form {
   margin-top: 0px;
 
   border: none;
-  color: rgb(177, 177, 177);
+  color: rgb(216, 202, 190);
 }
 
 form input {
