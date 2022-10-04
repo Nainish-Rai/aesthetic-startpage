@@ -3,7 +3,7 @@ Aesthetic Startpage to boost your productivity and at the same time give your de
 Here is a [Live Preview](https://633c1700890c5776c5575699--iridescent-starburst-f83bcd.netlify.app/)
 
 ## Installation
-#### Method 1:
+##### Method 1:
 1. Download/Clone this repository.
 2. Open folder of theme you want to use.
 3. Open index.html file using a web browser.
@@ -11,7 +11,7 @@ Here is a [Live Preview](https://633c1700890c5776c5575699--iridescent-starburst-
 5. Go to web browser's homepage settings.
 6. Select Custom url homepage and paste the url.
 
-### Method 2:
+##### Method 2:
 - Copy this Page [link](https://633c1700890c5776c5575699--iridescent-starburst-f83bcd.netlify.app/) and use it as custom url homepage
 
 ## Themes:
