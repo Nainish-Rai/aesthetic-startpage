@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
+
+/* html {
+  max-width: 100%;
+} */
+body {
+  background-color: rgb(36, 36, 36);
+  font-family: "Source Code Pro", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-landscape {
+  background-color: rgba(35, 35, 35, 0.902);
+  margin-top: 10%;
+  height: 800px;
+  width: 700px;
+  box-shadow: -15px 15px 20px rgb(20, 20, 20);
+  /* transition: all 0.2s fade-in-out; */
+  display: flex;
+  flex-direction: row;
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 0px 40px rgb(0, 0, 0);
+}
+
+.links {
+  width: 300px;
+  padding-left: 20px;
+  margin-top: -20px;
+  margin-left: 60px;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 100;
+  padding-top: 20px;
+  border-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 2px;
+}
+
+.box-img2 {
+  height: 690px;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+h3 {
+  color: rgb(183 130 107); 
+  /* margin: 3px; */
+  font-weight: 300;
+  padding-left: 40px;
+  align-items: center;
+  display: flex;
+}
+
+/* h3:hover {
+  font-weight: 900;
+} */
+a:hover {
+  color: rgb(183 130 107);
+  transform: scale(2);
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+a {
+  padding: 0px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.wrapper {
+  margin-top: 30px;
+  margin-left: 50px;
+  padding-left: 20px;
+}
+
+form {
+  font-size: 2em;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-left: -450px;
+  margin-top: 0px;
+
+  border: none;
+  color: rgb(183 130 107);;
+}
+
+form input {
+  border: none;
+  background-color: rgba(240, 248, 255, 0);
+  color: #aaa;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+form input:focus {
+  outline: none;
+}
+.bg {
+    height: 780px;
+    position: fixed;
+    width: 700px;
+    background-color: rgb(255 187 165);
+    margin-left: -40px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 30px rgb(251 64 4);
+}
