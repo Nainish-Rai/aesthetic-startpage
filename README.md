@@ -18,17 +18,20 @@ Here is a [Live Preview](https://633c1700890c5776c5575699--iridescent-starburst-
 ### Purple-Mesh
 ![Screenshot from 2022-10-04 22-50-35](https://user-images.githubusercontent.com/109546113/193884959-fde95cd2-fe52-4c2a-8f22-91b2bc83ed6a.png)
 ### Orange
-![orange](https://user-images.githubusercontent.com/109546113/189882679-426f2303-5f06-40da-944a-91c9f72a2a59.png)
-### Blue
-![blue](https://user-images.githubusercontent.com/109546113/189882681-108c6999-5c63-48a4-bcb4-c4fa5d91203f.png)
-### Green
-![green](https://user-images.githubusercontent.com/109546113/189882687-5929b8cd-0b0b-47e3-8611-cfea0075d639.png)
-### Cherry
-![cherry](https://user-images.githubusercontent.com/109546113/189882691-3e57b19b-45a4-4e48-8d64-ead2fa581a74.png)
-### Purple
-![image](https://user-images.githubusercontent.com/82697807/193640072-ac35da15-3755-4297-8be9-645338b0eb83.png)
-### Minimal
-![min](https://user-images.githubusercontent.com/109546113/189882695-8f7f71a1-3fd9-469d-9b40-1c0387586fdb.png)
+![Screenshot from 2022-10-04 22-59-26](https://user-images.githubusercontent.com/109546113/193887457-1923a57d-879d-4145-9add-f7800960ff6f.png)
 
- 
- ## Feel free to make new colour themes <3
+### Blue
+![Screenshot from 2022-10-04 22-59-39](https://user-images.githubusercontent.com/109546113/193887481-973a2c77-909e-4f70-b49c-a9cc9c869ea1.png)
+
+### Green
+![Screenshot from 2022-10-04 22-59-52](https://user-images.githubusercontent.com/109546113/193887509-a5969dfe-17a4-429c-b337-f8d3589306d2.png)
+
+### Cherry
+![Screenshot from 2022-10-04 23-00-04](https://user-images.githubusercontent.com/109546113/193887547-87a580f8-b32d-478e-a96c-967eca69afbc.png)
+
+
+### Purple
+![Screenshot from 2022-10-04 23-00-35](https://user-images.githubusercontent.com/109546113/193887582-95498fcf-ca59-49bc-a128-960b7439ee8b.png)
+
+
+### Feel free to make new colour themes and improvements <3
