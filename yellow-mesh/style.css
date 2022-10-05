@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
+
+/* html {
+  max-width: 100%;
+} */
+body {
+  background-color: rgb(36, 36, 36);
+  font-family: "Source Code Pro", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-landscape {
+  background-color: rgba(35, 35, 35, 0.902);
+  margin-top: 10%;
+  height: 800px;
+  width: 700px;
+  box-shadow: -15px 15px 20px rgb(20, 20, 20);
+  /* transition: all 0.2s fade-in-out; */
+  display: flex;
+  flex-direction: row;
+  backdrop-filter: blur(7px);
+  box-shadow: 0px 0px 40px rgb(0, 0, 0);
+}
+
+.links {
+  width: 300px;
+  padding-left: 20px;
+  margin-top: -20px;
+  margin-left: 30px;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 100;
+  padding-top: 20px;
+  border-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 2px;
+}
+
+.box-img2 {
+  height: 680px;
+  padding-left: 10px;
+  width: 400px;
+  padding-top: 15px;
+}
+
+h3 {
+    color: rgba(242, 252, 44, 0.992);
+  /* margin: 3px; */
+  font-weight: 300;
+  padding-left: 40px;
+  align-items: center;
+  display: flex;
+}
+
+/* h3:hover {
+  font-weight: 900;
+} */
+a:hover {
+  color: rgba(107, 102, 255, 0.01);
+  transform: scale(2);
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+a {
+  padding: 0px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.wrapper {
+  margin-top: 30px;
+  margin-left: 50px;
+  padding-left: 20px;
+}
+
+form {
+  font-size: 2em;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-left: -450px;
+
+  border: none;
+  color: rgba(242, 252, 44, 0.992);
+}
+
+form input {
+  border: none;
+  background-color:rgba(107, 102, 255, 0.01);
+  color: #aaa;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+form input:focus {
+  outline: none;
+}
+.bg {
+  height: 780px;
+  position: fixed;
+  width: 700px;
+
+  background-color:#d3ff99;
+  background-image:
+  radial-gradient(at 85% 34%, hsla(53,69%,62%,1) 0px, transparent 50%),
+  radial-gradient(at 11% 16%, hsla(63,56%,44%,1) 0px, transparent 50%),
+  radial-gradient(at 5% 83%, hsla(25,81%,57%,1) 0px, transparent 50%),
+  radial-gradient(at 47% 19%, hsla(131,71%,73%,1) 0px, transparent 50%),
+  radial-gradient(at 73% 86%, hsla(185,89%,65%,1) 0px, transparent 50%),
+  radial-gradient(at 85% 81%, hsla(179,77%,73%,1) 0px, transparent 50%),
+  radial-gradient(at 40% 76%, hsla(55,69%,38%,1) 0px, transparent 50%);
+  margin-left: -40px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 30px rgba(255, 227, 102, 0.849);
+}
