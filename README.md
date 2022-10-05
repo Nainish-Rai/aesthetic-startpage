@@ -27,6 +27,8 @@ Here is a [Live Preview](https://633c1700890c5776c5575699--iridescent-starburst-
 ![image](https://user-images.githubusercontent.com/82697807/193640072-ac35da15-3755-4297-8be9-645338b0eb83.png)
 ### 6. Minimal
 ![min](https://user-images.githubusercontent.com/109546113/189882695-8f7f71a1-3fd9-469d-9b40-1c0387586fdb.png)
+### 7. Mint
+![Mint](https://cdn.discordapp.com/attachments/746050102912876685/1027086826588078120/unknown.png)
 
  
  ## Feel free to make new colour themes <3
