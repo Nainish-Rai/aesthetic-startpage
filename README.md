@@ -17,6 +17,7 @@ Here is a [Live Preview](https://iridescent-starburst-f83bcd.netlify.app/)
 ## Themes:
 ### Purple-Mesh
 ![Screenshot from 2022-10-04 22-50-35](https://user-images.githubusercontent.com/109546113/193884959-fde95cd2-fe52-4c2a-8f22-91b2bc83ed6a.png)
+
 ### Orange
 ![Screenshot from 2022-10-04 22-59-26](https://user-images.githubusercontent.com/109546113/193887457-1923a57d-879d-4145-9add-f7800960ff6f.png)
 
@@ -29,9 +30,10 @@ Here is a [Live Preview](https://iridescent-starburst-f83bcd.netlify.app/)
 ### Cherry
 ![Screenshot from 2022-10-04 23-00-04](https://user-images.githubusercontent.com/109546113/193887547-87a580f8-b32d-478e-a96c-967eca69afbc.png)
 
-
 ### Purple
 ![Screenshot from 2022-10-04 23-00-35](https://user-images.githubusercontent.com/109546113/193887582-95498fcf-ca59-49bc-a128-960b7439ee8b.png)
 
+### Mint
+![Mint](https://cdn.discordapp.com/attachments/746050102912876685/1027086826588078120/unknown.png)
 
 ### Feel free to make new colour themes and improvements <3
