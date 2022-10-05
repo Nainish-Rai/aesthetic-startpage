@@ -46,7 +46,7 @@ body {
 }
 
 h3 {
-  color: rgba(214, 44, 252, 0.992);
+  color: rgba(223, 155, 21, 0.992);
   /* margin: 3px; */
   font-weight: 300;
   padding-left: 40px;
@@ -58,7 +58,7 @@ h3 {
   font-weight: 900;
 } */
 a:hover {
-  color: rgba(214, 44, 252, 0.792);
+  color: rgba(223, 155, 21, 0.992);
   transform: scale(2);
   margin-bottom: 2px;
   font-weight: 500;
@@ -83,7 +83,7 @@ form {
   margin-left: -450px;
 
   border: none;
-  color: rgba(214, 44, 252, 0.992);
+  color: rgba(223, 155, 21, 0.992);
 }
 
 form input {
