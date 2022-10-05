@@ -5,17 +5,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&amp;display=swap" rel="stylesheet">
+   
     <title>Startpage</title>
+    <style>
+        body{
+            background-color: rgb(36, 36, 36);
+        }
+    </style>
+     <link rel="stylesheet" href="./cherry/cherry.css" />
+     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&amp;display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
+        <div class="theme_btn" >
+        <button style="height:1rem ; width:2rem; background-color: blue; border-radius: 4px;" onclick="changeCSS('blue',0)"></button>
+        <button style="height:1rem ; width:2rem; background-color: pink; border-radius: 4px;" onclick="changeCSS('cherry',0)"></button>
+        <button style="height:1rem ; width:2rem; background-color: green; border-radius: 4px;" onclick="changeCSS('green',0)"></button>
+        <button style="height:1rem ; width:2rem; background-color: orange; border-radius: 4px;" onclick="changeCSS('orange',0)"></button>
+        <button style="height:1rem ; width:2rem; background-color: purple; border-radius: 4px;" onclick="changeCSS('purple',0)"></button>
+        <button style="height:1rem ; width:2rem; background-color: white; border-radius: 4px;" onclick="changeCSS('white',0)"></button>
+        <button style="height:1rem ; width:2rem; background-color: gray; border-radius: 4px;" onclick="changeCSS('gray',0)"></button>
+        <button style="height:1rem ; width:2rem; background-color: yellow; border-radius: 4px;" onclick="changeCSS('yellow',0)"></button>
+        </div>
     <div class="bg"></div>
         <div class="box-landscape">
             <div class="box">
-                <img class="box-img2" src="images/img.jpg" alt="No image" />
+                <img class="box-img2" id="box.img6" src="./cherry/images/gif.gif" alt="No image" />
             </div>
             <div class="links">
                 <div id="content">
@@ -71,5 +87,21 @@
     </div>
     
 </body>
+<script>
+   
+    function changeCSS(cssFile, cssLinkIndex) {
+     var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+     var newlink = document.createElement("link");
+        newlink.setAttribute("rel", "stylesheet");
+        newlink.setAttribute("type", "text/css");
+        newlink.setAttribute("href", `./${cssFile}/${cssFile}.css`);
+        changeImgSrc(cssFile);
+        document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+    function changeImgSrc(cssFile){
+        var img_bar=document.getElementById("box.img6");
+        img_bar.src=`./${cssFile}/images/gif.gif`;
+    }
+</script>
 
 </html>
