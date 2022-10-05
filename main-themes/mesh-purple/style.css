@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
+:root {
+  --background-color: #00e77f;
+  --link-hover: rgba(145, 34, 196, 0.792);
+  --link-heading: rgba(212, 20, 255, 0.992);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  background-color: rgb(36, 36, 36);
+  font-family: "Source Code Pro", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4rem;
+  margin-top: -1rem;
+}
+.maincard {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(35, 35, 35, 0.902);
+  margin-top: 10%;
+  height: 800px;
+  width: 700px;
+  backdrop-filter: blur(7px);
+  box-shadow: 0px 0px 40px rgb(0, 0, 0);
+}
+.content {
+  display: flex;
+  gap: 3rem;
+}
+.image {
+  max-width: 50%;
+  margin-right: 60px;
+}
+img {
+  max-height: 680px;
+  max-width: 400px;
+  height: 680px;
+  padding-left: 10px;
+  width: 400px;
+  padding-top: 15px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  width: 300px;
+  margin-top: 1rem;
+  padding-top: 5px;
+  margin-left: 40px;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 100;
+  border-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 2px;
+}
+.links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+}
+.links h3 {
+  color: var(--link-heading);
+  font-weight: 600;
+  align-items: center;
+  display: flex;
+}
+a:hover {
+  color: var(--link-hover);
+  transform: scale(2);
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+a {
+  padding: 0px;
+  text-decoration: none;
+  color: aliceblue;
+}
+form {
+  font-size: 2.5rem;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  border: none;
+  color: rgba(214, 44, 252, 0.992);
+}
+
+form input {
+  border: none;
+  background-color: rgba(107, 102, 255, 0);
+  color: #aaa;
+  font-size: 30px;
+  font-weight: 500;
+}
+form input:focus {
+  outline: none;
+}
+.search {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+.bg {
+  height: 780px;
+  position: fixed;
+  width: 700px;
+  margin-left: -5rem;
+  margin-top: -2rem;
+  background-color: hsla(0, 100%, 50%, 1);
+  background-image: radial-gradient(
+      at 40% 20%,
+      hsla(240, 75%, 61%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(189, 80%, 49%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(340, 66%, 70%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(233, 66%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(343, 61%, 60%, 1) 0px, transparent 50%);
+
+  box-shadow: 0px 0px 30px rgba(209, 102, 255, 0.656);
+}
