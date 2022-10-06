@@ -1,8 +1,20 @@
 @import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
-
-/* html {
-  max-width: 100%;
-} */
+:root {
+  --background-color: rgb(255, 0, 0);
+  --link-hover: rgb(252, 100, 19);
+  --link-heading: rgb(255, 139, 31);
+  --background-glow: 0px 0px 30px rgb(255, 139, 31);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 body {
   background-color: rgb(36, 36, 36);
   font-family: "Source Code Pro", monospace;
@@ -10,55 +22,73 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-.box-landscape {
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4rem;
+  margin-top: -1rem;
+}
+.maincard {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(35, 35, 35, 0.902);
   margin-top: 10%;
   height: 800px;
   width: 700px;
-  box-shadow: -15px 15px 20px rgb(20, 20, 20);
-  /* transition: all 0.2s fade-in-out; */
-  display: flex;
-  flex-direction: row;
   backdrop-filter: blur(7px);
   box-shadow: 0px 0px 40px rgb(0, 0, 0);
 }
-
-.links {
-  width: 300px;
-  padding-left: 20px;
-  margin-top: -20px;
-  margin-left: 30px;
-  color: aliceblue;
-  font-size: 20px;
-  font-weight: 100;
-  padding-top: 20px;
-  border-color: rgba(255, 255, 255, 0);
-  border-style: solid;
-  border-width: 2px;
+.content {
+  display: flex;
+  gap: 3rem;
 }
-
-.box-img2 {
+.image {
+  max-width: 50%;
+  margin-right: 60px;
+}
+img {
+  max-height: 680px;
+  max-width: 400px;
   height: 680px;
   padding-left: 10px;
   width: 400px;
   padding-top: 15px;
 }
-
-h3 {
-  color: rgba(255, 139, 31, 1);
-  /* margin: 3px; */
-  font-weight: 300;
-  padding-left: 40px;
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  width: 300px;
+  margin-top: 1rem;
+  padding-top: 5px;
+  margin-left: 40px;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 100;
+  border-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 2px;
+}
+.links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+}
+.links h3 {
+  color: var(--link-heading);
+  font-weight: 600;
   align-items: center;
   display: flex;
 }
-
-/* h3:hover {
-  font-weight: 900;
-} */
 a:hover {
-  color: rgba(255, 139, 31, 1);
+  color: var(--link-hover);
   transform: scale(2);
   margin-bottom: 2px;
   font-weight: 500;
@@ -69,48 +99,43 @@ a {
   text-decoration: none;
   color: aliceblue;
 }
-
-.wrapper {
-  margin-top: 30px;
-  margin-left: 50px;
-  padding-left: 20px;
-}
-
 form {
-  font-size: 2em;
+  font-size: 2.5rem;
   margin-bottom: 0px;
   padding-top: 0px;
-  margin-left: -450px;
-
   border: none;
-  color: rgba(255, 139, 31, 1);
+  color: var(--link-heading);
 }
 
 form input {
   border: none;
-  background-color:rgba(107, 102, 255, 0.01);
+  background-color: rgba(107, 102, 255, 0);
   color: #aaa;
   font-size: 30px;
   font-weight: 500;
 }
-
 form input:focus {
   outline: none;
+}
+.search {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
 }
 .bg {
   height: 780px;
   position: fixed;
   width: 700px;
-  background-color:hsla(0,100%,50%,1);
-background-image:
-radial-gradient(at 40% 20%, hsla(49, 100%, 55%, 1) 0px, transparent 50%),
+  margin-left: -5rem;
+  margin-top: -2rem;
+  background-color: var(--background-color);
+  background-image: radial-gradient(at 40% 20%, hsla(49, 100%, 55%, 1) 0px, transparent 50%),
 radial-gradient(at 80% 0%, hsla(30, 100%, 56%, 1) 0px, transparent 50%),
 radial-gradient(at 0% 50%, hsla(339, 100%, 58%, 1) 0px, transparent 50%),
 radial-gradient(at 80% 50%, hsla(340,66%,70%,1) 0px, transparent 50%),
 radial-gradient(at 0% 100%, hsla(296, 100%, 57%, 1) 0px, transparent 50%),
 radial-gradient(at 80% 100%, hsla(29, 100%, 56%, 1) 0px, transparent 50%),
 radial-gradient(at 0% 50%, hsla(343,61%,60%,1) 0px, transparent 50%);
-  margin-left: -40px;
-  margin-top: 30px;
-  box-shadow: 0px 0px 30px rgba(255, 139, 31, 1);
+  box-shadow: var(--background-glow);
 }
