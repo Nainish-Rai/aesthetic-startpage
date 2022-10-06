@@ -138,7 +138,7 @@ form input:focus {
 
 /* Hamburger Menu */
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   opacity: 0.95;
@@ -184,7 +184,7 @@ form input:focus {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: #333;
+  background: var(--background-color);
 }
 
 .navbar-container .hamburger-lines .line1 {
@@ -212,9 +212,8 @@ form input:focus {
   margin-left: -40px;
   padding-left: 50px;
   transition: transform 0.5s ease-in-out;
-  box-shadow: 5px 0px 10px 0px #aaa;
+  box-shadow: 5px 0px 10px 0px var(--background-color);
   list-style: none;
-  /* opacity: 5%; */
 }
 
 .navbar .menu-items li {
@@ -226,6 +225,11 @@ form input:focus {
 
 .navbar .menu-items li a {
   color: var(--background-color);
+}
+
+.navbar .menu-items li a:hover {
+  cursor: pointer;
+  color: var(--link-hover);
 }
 
 
