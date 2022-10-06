@@ -1,9 +1,12 @@
+
+
+
 @import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
 :root {
-  --background-color: rgb(255, 0, 0);
-  --link-hover: rgba(223, 155, 21, 0.9);
-  --link-heading: rgba(223, 155, 21, 0.9);
-  --background-glow: 0px 0px 30px rgba(209, 102, 255, 0.66);
+  --background-color: #B9BAC9;
+  --link-hover:  #B9BAC9;
+  --link-heading:  #6C7FBF;
+  --background-glow: 0px 0px 30px #B9BAC9;
 }
 * {
   padding: 0;
@@ -15,6 +18,7 @@ html {
   align-items: center;
   justify-content: center;
 }
+
 body {
   background-color: rgb(36, 36, 36);
   font-family: "Source Code Pro", monospace;
@@ -22,6 +26,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -29,6 +34,7 @@ body {
   margin-left: 4rem;
   margin-top: -1rem;
 }
+
 .maincard {
   display: flex;
   flex-direction: column;
@@ -39,10 +45,12 @@ body {
   backdrop-filter: blur(7px);
   box-shadow: 0px 0px 40px rgb(0, 0, 0);
 }
+
 .content {
   display: flex;
   gap: 3rem;
 }
+
 .image {
   max-width: 50%;
   margin-right: 60px;
@@ -55,11 +63,13 @@ img {
   width: 400px;
   padding-top: 15px;
 }
+
 section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
 .links {
   display: flex;
   flex-direction: column;
@@ -76,17 +86,20 @@ section {
   border-style: solid;
   border-width: 2px;
 }
+
 .links ul {
   display: flex;
   flex-direction: column;
   gap: 0.12rem;
 }
+
 .links h3 {
   color: var(--link-heading);
   font-weight: 600;
   align-items: center;
   display: flex;
 }
+
 a:hover {
   color: var(--link-hover);
   transform: scale(2);
@@ -130,6 +143,5 @@ form input:focus {
   margin-left: -5rem;
   margin-top: -2rem;
   background-color: var(--background-color);
-  background-image: radial-gradient(at 40% 20%, hsl(0, 99%, 64%) 0px, transparent 50%), radial-gradient(at 80% 0%, hsl(37, 84%, 49%) 0px, transparent 50%), radial-gradient(at 0% 50%, hsl(48, 100%, 72%) 0px, transparent 50%), radial-gradient(at 80% 50%, hsla(340,66%,70%,1) 0px, transparent 50%), radial-gradient(at 0% 100%, hsl(347, 87%, 47%) 0px, transparent 50%), radial-gradient(at 80% 100%, hsl(0, 100%, 70%) 0px, transparent 50%), radial-gradient(at 0% 0%, hsla(343,61%,60%,1) 0px, transparent 50%);
   box-shadow: var(--background-glow);
 }
