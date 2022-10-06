@@ -136,7 +136,7 @@ form input:focus {
   box-shadow: var(--background-glow);
 }
 
-/* Navbar */
+/* Hamburger Menu */
 .navbar {
   position: absolute;
   top: 0;
