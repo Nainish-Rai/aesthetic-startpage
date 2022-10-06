@@ -23,6 +23,7 @@ body {
   justify-content: center;
   flex-direction: column;
   position: relative;
+  overflow-x: hidden;
 }
 .wrapper {
   display: flex;
@@ -218,9 +219,11 @@ form input:focus {
 
 .navbar .menu-items li {
   margin-bottom: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 500;
+  padding-right: 2rem;
 }
+
 .navbar .menu-items li a {
   color: var(--background-color);
 }

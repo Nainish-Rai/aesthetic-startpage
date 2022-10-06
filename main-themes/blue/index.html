@@ -22,7 +22,7 @@
             <span class="line line3"></span>
         </div>
         <ul class="menu-items">
-            <li><a href="#">blue</a></li>
+            <li><a onclick="changeCSS('main-theme/cherry',0)">blue</a></li>
             <li><a href="#">cherry</a></li>
             <li><a href="#">gray</a></li>
             <li><a href="#">green</a></li>
@@ -94,4 +94,21 @@
       </div>
     </div>
   </body>
+  <script>
+   
+    function changeCSS(cssFile, cssLinkIndex) {
+      console.log("Onclick working");
+     var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+     var newlink = document.createElement("link");
+        newlink.setAttribute("rel", "stylesheet");
+        newlink.setAttribute("type", "text/css");
+        newlink.setAttribute("href", `../${cssFile}/${cssFile}.css`);
+        changeImgSrc(cssFile);
+        document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+    function changeImgSrc(cssFile){
+        var img_bar=document.getElementById("box.img6");
+        img_bar.src=`../${cssFile}/images/gif.gif`;
+    }
+</script>
 </html>
