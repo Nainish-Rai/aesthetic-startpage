@@ -35,3 +35,41 @@ Here is a [Live Preview](https://iridescent-starburst-f83bcd.netlify.app/)
 
 
 ### Feel free to make new colour themes and improvements <3
+
+
+## Create new themes using template theme
+
+### Forking the Repository
+
+1. Follow [this tutorial](https://github.com/firstcontributions/first-contributions "this tutorial") till **`Create a Branch`**.
+
+### Creating a New Theme
+
+#### Using the template
+
+1. Navigate to `aesthetic-startpage\template-theme\normal` in your desktop.
+
+2. Copy all the files and folders (`index.html`, `style.css`, `images`).
+
+3. Now navigate to `aesthetic-startpage\new-themes\` in your desktop.
+
+4. Create a new folder and give it a unique theme name of your choice.
+
+5. Paste the previously copied files and folder inside the new folder you created.
+
+#### Changing the aesthetic
+
+1. Open `style.css` in your preferred ide or text editor.
+
+2. Inside `:root` change the `rgb` values for different variables.
+
+![guide](https://user-images.githubusercontent.com/90842071/194304604-9a33b75a-432f-47f7-b810-2142da53d2b5.jpg)
+
+3. If you want to add gradient, you can add it inside `.bg`
+
+4. To add new image, navigate to `images` inside the folder you created and replace the existing image with the one you want. Rename the image to `gif.gif`. If the image is not gif you can convert it by using MS Paint (save as `gif.gif`) or any other software.
+
+### Committing and Pushing the changes
+
+1. Follow rest of [this tutorial](https://github.com/firstcontributions/first-contributions "this tutorial") from where you have left.
+
