@@ -130,35 +130,58 @@ form input:focus {
   margin-left: -5rem;
   margin-top: -2rem;
   background-color: var(--background-color);
-  background: linear-gradient(45deg, #fb0094, #00bfff, #00ff00,#ffff00, #ff0000, #fb0094,
-  #00ffb7, #00f7ff,#ffff00, #ff0000);
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00bfff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #00ffb7,
+    #00f7ff,
+    #ffff00,
+    #ff0000
+  );
   animation: steam 20s linear infinite;
   box-shadow: var(--background-glow);
 }
-.bg:before, .bg:after {
-	content: '';
-	position: absolute;
-	left: -2px;
-	top: -2px;
-	background: linear-gradient(45deg, #fb0094, #00bfff, #00ff00,#ffff00, #ff0000, #fb0094,
-    #00ffb7, #00f7ff,#ffff00, #ff0000);
-	background-size: 400%;
-	width: calc(100% + 4px);
-	height: calc(100% + 4px);
-	z-index: -1;
-	animation: steam 80s linear infinite;
+.bg:before,
+.bg:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00bfff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #00ffb7,
+    #00f7ff,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 70s linear infinite;
 }
 @keyframes steam {
-	0% {
-		background-position: 0 0;
-	}
-	50% {
-		background-position: 400% 0;
-	}
-	100% {
-		background-position: 0 0;
-	}
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
-.bg:after{
-	filter: blur(50px);
+.bg:after {
+  filter: blur(50px);
 }
