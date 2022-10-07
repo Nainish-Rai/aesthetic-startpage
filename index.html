@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./main-themes/blue/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&amp;display=swap"
       rel="stylesheet"
@@ -13,12 +13,32 @@
   </head>
 
   <body>
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <input type="checkbox" name="" id="">
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+            <li><a onclick="changeCSS('blue',0)">Blue</a></li>
+            <li><a onclick="changeCSS('cherry',0)">Cherry</a></li>
+            <li><a onclick="changeCSS('gray',0)">Gray</a></li>
+            <li><a onclick="changeCSS('green',0)">Green</a></li>
+            <li><a onclick="changeCSS('mesh-purple',0)">Mesh-Purple</a></li>
+            <li><a onclick="changeCSS('orange',0)">Orange</a></li>
+            <li><a onclick="changeCSS('purple',0)">Purple</a></li>
+            <li><a onclick="changeCSS('white',0)">White</a></li>
+        </ul>
+    </div>
+  </nav>
     <div class="wrapper">
       <div class="bg"></div>
       <div class="maincard">
         <div class="content">
           <div class="image">
-            <img id="img" src="images/gif.gif" alt="No image" />
+            <img id="img" src="./main-themes/blue/images/gif.gif" alt="No image" />
           </div>
           <div id="links" class="links">
             <section>
@@ -82,13 +102,13 @@
      var newlink = document.createElement("link");
         newlink.setAttribute("rel", "stylesheet");
         newlink.setAttribute("type", "text/css");
-        newlink.setAttribute("href", `../${cssFile}/style.css`);
+        newlink.setAttribute("href", `./main-themes/${cssFile}/style.css`);
         changeImgSrc(cssFile);
         document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
 }
     function changeImgSrc(cssFile){
         var img_bar=document.getElementById("img");
-        img_bar.src=`../${cssFile}/images/gif.gif`;
+        img_bar.src=`./main-themes/${cssFile}/images/gif.gif`;
     }
 </script>
 </html>
