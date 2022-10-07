@@ -1,4 +1,4 @@
-# Aesthetic-Startpage
+# aesthetic-startpage
 Aesthetic Startpage to boost your productivity and at the same time give your desktop a new aesthetic look.
 Here is a [Live Preview](https://iridescent-starburst-f83bcd.netlify.app/)
 
@@ -34,7 +34,9 @@ Here is a [Live Preview](https://iridescent-starburst-f83bcd.netlify.app/)
 ![Screenshot from 2022-10-04 23-00-35](https://user-images.githubusercontent.com/109546113/193887582-95498fcf-ca59-49bc-a128-960b7439ee8b.png)
 
 
-### Feel free to make new colour themes and improvements <3
+#### Feel free to make new colour themes and improvements <3
+#### Also don't forget to star the repo :)
+
 
 
 ## Create new themes using template theme
