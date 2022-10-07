@@ -180,6 +180,11 @@ form input:focus {
   justify-content: space-between;
 }
 
+.hamburger-lines {
+  width: 0.5rem;
+  height: 1rem;
+}
+
 .navbar-container .hamburger-lines .line {
   cursor: pointer;
   display: block;

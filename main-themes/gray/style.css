@@ -179,6 +179,7 @@ form input:focus {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .hamburger-lines {
   width: 0.5rem;
   height: 1rem;
@@ -237,8 +238,6 @@ form input:focus {
   cursor: pointer;
   color: var(--link-hover);
 }
-
-
 
 .navbar-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0em);
