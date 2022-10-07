@@ -11,9 +11,9 @@
 }
 html {
   height: 100vh;
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
 }
 body {
   background-color: rgb(36, 36, 36);
@@ -145,6 +145,7 @@ form input:focus {
 .navbar-container input[type="checkbox"],
 .navbar-container .hamburger-lines {
   display: block;
+  cursor: pointer;
 }
 
 .navbar-container {
@@ -165,9 +166,10 @@ form input:focus {
 }
 
 .navbar-container .hamburger-lines {
+  cursor: pointer;
   display: block;
-  height: 23px;
-  width: 35px;
+  height: 15px;
+  width: 20px;
   position: absolute;
   top: 17px;
   left: 20px;
@@ -177,12 +179,18 @@ form input:focus {
   justify-content: space-between;
 }
 
+.hamburger-lines {
+  width: 0.5rem;
+  height: 1rem;
+}
+
 .navbar-container .hamburger-lines .line {
+  cursor: pointer;
   display: block;
-  height: 4px;
+  height: 2px;
   width: 100%;
   border-radius: 10px;
-  background: var(--background-color);
+  background: rgba(113, 113, 113, 0.503);
 }
 
 .navbar-container .hamburger-lines .line1 {
@@ -233,7 +241,7 @@ form input:focus {
 
 
 .navbar-container input[type="checkbox"]:checked ~ .menu-items {
-  transform: translateX(0);
+  transform: translateX(0em);
 }
 
 .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {

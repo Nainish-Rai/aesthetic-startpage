@@ -180,6 +180,7 @@ form input:focus {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .hamburger-lines {
   width: 0.5rem;
   height: 1rem;
