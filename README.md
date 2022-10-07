@@ -1,6 +1,6 @@
 # aesthetic-startpage
 Aesthetic Startpage to boost your productivity and at the same time give your desktop a new aesthetic look.
-Here is a [Live Preview](https://iridescent-starburst-f83bcd.netlify.app/)
+Here is a [Live Preview](https://nainish-startpage.netlify.app/)
 
 ## Installation
 ##### Method 1:
@@ -12,7 +12,11 @@ Here is a [Live Preview](https://iridescent-starburst-f83bcd.netlify.app/)
 6. Select Custom url homepage and paste the url.
 
 ##### Method 2:
-- Copy this Page [link](https://iridescent-starburst-f83bcd.netlify.app/) and use it as custom url homepage
+- Copy this Page [link](https://nainish-startpage.netlify.app/) and use it as custom url homepage
+
+### Changing-Themes 
+- You can change theme using the menu given at top-right corner.
+- You can use a specific-theme by using method-1.
 
 ## Themes:
 ### Purple-Mesh
