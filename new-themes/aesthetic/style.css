@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
 :root {
   --background-color: #00e77f;
-  --link-hover: hsla(16, 73%, 75%, 1);
-  --link-heading: hsla(16, 73%, 75%, 1);
+  --link-hover: #9075D8;
+  --link-heading: #9075D8;
 }
 * {
   padding: 0;
@@ -103,7 +103,7 @@ form {
   margin-bottom: 0px;
   padding-top: 0px;
   border: none;
-  color: hsla(16, 73%, 75%, 1);
+  color: #9075D8;
 }
 
 form input {
@@ -128,13 +128,13 @@ form input:focus {
   width: 700px;
   margin-left: -5rem;
   margin-top: -2rem;
-  background-color: hsla(40, 78%, 84%, 1);
+  background-color: #EE8EA5;
 background-image:
-radial-gradient(at 100% 0%, hsla(16, 73%, 75%, 1) 0px, transparent 50%),
-radial-gradient(at 80% 0%, hsla(40, 78%, 84%, 1) 0px, transparent 50%),
-radial-gradient(at 0% 50%, hsla(356, 26%, 55%, 1) 0px, transparent 50%),
-radial-gradient(at 80% 50%, hsla(356, 26%, 55%, 1)  0px, transparent 50%),
-radial-gradient(at 0% 100%, hsla(16, 73%, 75%, 1)  0px, transparent 50%),
-radial-gradient(at 0% 50%, hsla(356, 26%, 55%, 1) 0px, transparent 50%);
-  box-shadow: 0px 0px 30px hsla(16, 73%, 75%, 1);
+radial-gradient(at 100% 0%, #BEFCFF 0px, transparent 50%),
+radial-gradient(at 80% 0%, #DDA6B9 0px, transparent 50%),
+radial-gradient(at 0% 50%, #9075D8 0px, transparent 50%),
+radial-gradient(at 80% 50%, #EE8EA5  0px, transparent 50%),
+radial-gradient(at 0% 100%, #9F63C4  0px, transparent 50%),
+radial-gradient(at 0% 50%, #BEFCFF 0px, transparent 50%);
+  box-shadow: 0px 0px 30px #B0E1FF;
 }
