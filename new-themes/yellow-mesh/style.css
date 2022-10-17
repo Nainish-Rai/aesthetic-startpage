@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
 :root {
   --background-color: rgb(211, 255, 153);
-  --link-hover: rgba(107, 102, 255, 0.1);
+  --link-hover: #fd8fa1;
   --link-heading: rgba(242, 252, 44, 0.992);
   --background-glow: 0px 0px 30px rgba(255, 227, 102, 0.85);
 }
