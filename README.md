@@ -79,3 +79,9 @@ Here is a [Live Preview](https://nainish-startpage.netlify.app/)
 
 1. Follow rest of [this tutorial](https://github.com/firstcontributions/first-contributions "this tutorial") from where you have left.
 
+## Thanks to all contributors ❤
+<a href="https://github.com/Nainish-Rai/aesthetic-startpage/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Nainish-Rai/aesthetic-startpage" />
+</a>
+
+
