@@ -2,7 +2,7 @@
 :root {
   --background-color: rgb(85, 44, 233);
   --link-hover: rgba(12, 133, 203, 0.791);
-  --link-heading: rgb(32, 251, 255);
+  --link-heading: rgb(32, 251, 256);
   --background-glow: 0px 0px 50px rgb(180, 100, 251);
 }
 * {
