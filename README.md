@@ -19,6 +19,10 @@ Here is a [Live Preview](https://nainish-startpage.netlify.app/)
 - You can use a specific-theme by using method-1.
 
 ## Themes:
+
+### Aqua-White
+![Aqua White](https://user-images.githubusercontent.com/112727916/193985545-9ffa5240-4bff-47e0-88a0-abd737ee8391.jpg)
+
 ### Purple-Mesh
 ![Screenshot from 2022-10-04 22-50-35](https://user-images.githubusercontent.com/109546113/193884959-fde95cd2-fe52-4c2a-8f22-91b2bc83ed6a.png)
 ### Orange
