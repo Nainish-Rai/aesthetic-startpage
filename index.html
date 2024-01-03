@@ -105,60 +105,77 @@
     </div>
   </body>
   <script>
-    let theme = localStorage.getItem("selected-theme");
-    if (theme) {
-      let selectedTheme = document.createElement("link");
-      selectedTheme.setAttribute("rel", "stylesheet");
-      selectedTheme.setAttribute("type", "text/css");
-      selectedTheme.setAttribute("href", `./main-themes/${theme}/style.css`);
+    const themes = [
+      "blue",
+      "cherry",
+      "violet",
+      "green",
+      "orange",
+      "purple",
+      "white",
+      "mesh-purple",
+      "summer-wave",
+      "retro-gradient",
+    ];
+
+    // Preload all of the themes css to avoid the FOUC on change
+    themes.forEach((theme) => {
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = `./main-themes/${theme}/style.css`;
+      link.classList.add(`theme-${theme}`);
+      link.disabled = true;
+      document.head.appendChild(link);
+    });
+
+    function changeCSS(theme) {
+      // Disable any themes that aren't the selected one
+      themes.forEach((t) => {
+        document.querySelector(`.theme-${t}`).disabled = t !== theme;
+      });
       changeImgSrc(theme);
-      // console.log(selectedTheme);
-      var oldlink = document.getElementsByTagName("link").item(0);
-      document
-        .getElementsByTagName("head")
-        .item(0)
-        .replaceChild(selectedTheme, oldlink);
+      // And save it to localStorage
+      localStorage.setItem("selected-theme", theme);
     }
 
-    function changeCSS(cssFile, cssLinkIndex) {
-      console.log("Onclick working");
-      var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
-      var newlink = document.createElement("link");
-      newlink.setAttribute("rel", "stylesheet");
-      newlink.setAttribute("type", "text/css");
-      newlink.setAttribute("href", `./main-themes/${cssFile}/style.css`);
-      changeImgSrc(cssFile);
-      document
-        .getElementsByTagName("head")
-        .item(cssLinkIndex)
-        .replaceChild(newlink, oldlink);
-      // console.log(newlink);
-      localStorage.setItem("selected-theme", cssFile);
+    // Change background image
+    function changeImgSrc(theme) {
+      let img_bar = document.getElementById("img");
+      img_bar.src = `./main-themes/${theme}/images/gif.gif`;
     }
-    function changeImgSrc(cssFile) {
-      var img_bar = document.getElementById("img");
-      img_bar.src = `./main-themes/${cssFile}/images/gif.gif`;
+
+    // Load the last selected theme on load
+    let storedTheme = localStorage.getItem("selected-theme");
+    if (storedTheme) {
+      changeCSS(storedTheme);
     }
 
     const search_url = "https://duckduckgo.com/";
 
     function search() {
-      const is_url = /^(((http)|(https)):\/\/)?(www\.)?[a-zA-Z0-9]+\.[a-zA-Z]+\/?([a-zA-Z0-9/?=&%-_]+)?$/;
-      const is_ip = /^(((http)|(https)):\/\/)?([0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}|localhost)(:[0-9]{1,5})?(\/[a-zA-Z0-9/?=&%-_]+)?$/;
+      const is_url =
+        /^(((http)|(https)):\/\/)?(www\.)?[a-zA-Z0-9]+\.[a-zA-Z]+\/?([a-zA-Z0-9/?=&%-_]+)?$/;
+      const is_ip =
+        /^(((http)|(https)):\/\/)?([0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}|localhost)(:[0-9]{1,5})?(\/[a-zA-Z0-9/?=&%-_]+)?$/;
 
       const search_term = document.getElementById("search_box").value;
       const url_match = search_term.match(is_url);
       const ip_match = search_term.match(is_ip);
       if (url_match != null) {
-        window.location.href = url_match[0].substring(0, 4) == "http" ? url_match[0] : "https://" + url_match[0];
+        window.location.href =
+          url_match[0].substring(0, 4) == "http"
+            ? url_match[0]
+            : "https://" + url_match[0];
       } else if (ip_match != null) {
-        window.location.href = ip_match[0].substring(0, 4) == "http" ? ip_match[0] : "http://" + ip_match[0];
+        window.location.href =
+          ip_match[0].substring(0, 4) == "http"
+            ? ip_match[0]
+            : "http://" + ip_match[0];
       } else {
         window.location.href = search_url + encodeURIComponent(search_term);
       }
 
       return false;
     }
-
   </script>
 </html>
