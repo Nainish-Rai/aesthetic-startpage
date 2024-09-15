@@ -2,6 +2,27 @@
 Aesthetic Startpage to boost your productivity and at the same time give your desktop a new aesthetic look.
 Here is a [Live Preview](https://nainish-startpage.netlify.app/)
 
+
+**NOTE!!!!!!!!!**
+We are developing a productivity SaaS platform that combines a clean, minimalist design with anime-inspired nature themes. The goal is to create a serene and engaging digital workspace that helps users streamline their tasks, organize their thoughts, and boost their overall productivity.
+
+**Key Features**
+Personalized start page with customizable widgets for bookmarks, notes, to-do lists, weather, and time
+Intuitive bookmark management system for saving, organizing, and accessing bookmarks
+Note-taking feature with Markdown support and a clean, minimalist interface
+Task management system with due dates, priorities, and integration with external services
+AI-powered chatbot for assistance with queries, task management, and information retrieval
+Aesthetic, modern UI with a consistent brand identity across all features
+AI-enhanced search engine for quick and relevant information retrieval
+Personal mood board 
+
+**Design Inspiration**
+The design of the SaaS platform will be inspired by minimalist aesthetics and nature-themed anime. We aim to create a clean, visually appealing interface that resonates with users who appreciate simplicity and whimsy. The color palette will be inspired by natural elements like water, leaves, and clouds, and the overall look and feel will be calming and inviting.
+Monetization
+
+**We are looking for developers, designers and dreamers**
+Suggest your ideas on what features we all can add, designs, and I welcome you all to contribute and create this ultimate opensource start space. 
+
 ## Installation
 ##### Method 1:
 1. Download/Clone this repository.
