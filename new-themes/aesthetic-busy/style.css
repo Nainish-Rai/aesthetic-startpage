@@ -38,6 +38,7 @@ body {
   width: 700px;
   backdrop-filter: blur(7px);
   box-shadow: 0px 0px 40px rgb(0, 0, 0);
+  z-index: 1;
 }
 .content {
   display: flex;
