@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&amp;display=swap"
       rel="stylesheet"
     />
-    <title>Startpage</title>
+    <title>Startpage - Search Engine Switcher Feature</title>
   </head>
 
   <body>
@@ -118,7 +118,7 @@
       "retro-gradient",
     ];
 
-    // Preload all of the themes css to avoid the FOUC on change
+    
     themes.forEach((theme) => {
       const link = document.createElement("link");
       link.rel = "stylesheet";
@@ -129,28 +129,60 @@
     });
 
     function changeCSS(theme) {
-      // Disable any themes that aren't the selected one
       themes.forEach((t) => {
         document.querySelector(`.theme-${t}`).disabled = t !== theme;
       });
       changeImgSrc(theme);
-      // And save it to localStorage
       localStorage.setItem("selected-theme", theme);
     }
 
-    // Change background image
     function changeImgSrc(theme) {
       let img_bar = document.getElementById("img");
       img_bar.src = `./main-themes/${theme}/images/gif.gif`;
     }
 
-    // Load the last selected theme on load
     let storedTheme = localStorage.getItem("selected-theme");
     if (storedTheme) {
       changeCSS(storedTheme);
     }
 
-    const search_url = "https://duckduckgo.com/";
+    const searchEngines = {
+      duckduckgo: { name: "DuckDuckGo", url: "https://duckduckgo.com/?q=" },
+      google: { name: "Google", url: "https://www.google.com/search?q=" },
+      chatgpt: { name: "ChatGPT", url: "https://chat.openai.com/?q=" },
+      gemini: { name: "Gemini", url: "https://gemini.google.com/app?q=" },
+      perplexity: { name: "Perplexity", url: "https://www.perplexity.ai/search?q=" },
+    };
+
+    let currentSearchEngine = localStorage.getItem("selected-search-engine") || "duckduckgo";
+
+    function switchSearchEngine(engineKey) {
+      if (searchEngines[engineKey]) {
+        currentSearchEngine = engineKey;
+        localStorage.setItem("selected-search-engine", engineKey);
+      }
+    }
+
+    document.addEventListener("keydown", function (event) {
+      if (!event.altKey) return;
+      const key = event.key && event.key.toLowerCase();
+      if (key === "d") {
+        event.preventDefault();
+        switchSearchEngine("duckduckgo");
+      } else if (key === "g") {
+        event.preventDefault();
+        switchSearchEngine("google");
+      } else if (key === "c") {
+        event.preventDefault();
+        switchSearchEngine("chatgpt");
+      } else if (key === "m") {
+        event.preventDefault();
+        switchSearchEngine("gemini");
+      } else if (key === "p") {
+        event.preventDefault();
+        switchSearchEngine("perplexity");
+      }
+    });
 
     function search() {
       const is_url =
@@ -172,7 +204,8 @@
             ? ip_match[0]
             : "http://" + ip_match[0];
       } else {
-        window.location.href = search_url + encodeURIComponent(search_term);
+        const engine = searchEngines[currentSearchEngine] || searchEngines.duckduckgo;
+        window.location.href = engine.url + encodeURIComponent(search_term);
       }
 
       return false;
